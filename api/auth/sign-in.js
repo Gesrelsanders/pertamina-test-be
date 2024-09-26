@@ -1,4 +1,3 @@
-// api/auth/sign-in.js
 const express = require('express');
 const jwt = require('jsonwebtoken');
 const bcrypt = require('bcryptjs');
@@ -6,7 +5,6 @@ const router = express.Router();
 const { JWT_SECRET } = require('../../config/jwtConfig');
 const users = require('../../models/user');
 
-// Login route
 router.post('/', (req, res) => {
   const { email, password } = req.body;
   const user = users.find(u => u.email === email);

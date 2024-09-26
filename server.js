@@ -8,7 +8,6 @@ app.use(cors());
 const apiRoutes = require('./api');
 app.use(express.json());
 
-// Use the API routes
 app.use('/api', apiRoutes);
 
 const PORT = process.env.PORT || 3000;

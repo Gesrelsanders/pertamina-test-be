@@ -1,4 +1,3 @@
-// api/product/items.js
 const express = require('express');
 const router = express.Router();
 const items = [];
